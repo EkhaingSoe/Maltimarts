@@ -9,11 +9,11 @@ const ProductList = ({data}) => {
       <>
           {
         data?.map((item, index) =>
-          <Link to={`/detail/${item.id}`}>
+          <Link key={item.id} to={`/detail/${item.id}`}>
             <ProductCard key={index} item={item} />
           </Link>
         )
-                      }
+           }
       </>
                       
    

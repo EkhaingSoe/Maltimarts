@@ -11,19 +11,6 @@ import { Link } from 'react-router-dom'
 const Shop = () => {
   const [productsData, setProductsData] = useState(products)
  
-
-
-  // const [filteredProducts, setFilteredProducts] = useState(productsData);
-  
-  //  useEffect(() => {
-    // Filter products based on the category filter
-  //   const filtered = filter
-  //     ? productsData.filter((product) => product.category === filter)
-  //      : productsData;
-  //    console.log(filtered);
-
-  //   setProductsData(filtered);
-  // }, [filter,productsData,]);
   
 
   const filterHandler = (e) => {
@@ -93,11 +80,6 @@ const Shop = () => {
                 <ProductList data={productsData}/>
                 
             }
-            
-            
-            {/* {
-              <ProductList data={productsData} />
-                    }  */}
               </div>
         </div>
       </section>

@@ -3,7 +3,7 @@ import { AiFillPlusCircle } from "react-icons/ai"
 import { motion } from 'framer-motion'
 import { useDispatch } from 'react-redux'
 import { addItem } from '../../redux/Slice/cartSlice'
- import {  toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 
 const ProductCard = ({ item }) => {
 
@@ -13,7 +13,7 @@ const ProductCard = ({ item }) => {
         dispatch(addItem({
             id: item.id,
             productName: item.productName,
-            image: item.imgUrl,
+            imgUrl: item.imgUrl,
             price:item.price
             
         }))
